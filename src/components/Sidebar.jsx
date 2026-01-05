@@ -5,6 +5,7 @@ function Sidebar({ selectedGame, onGameChange }) {
   const games = [
     { id: "dames", label: "🎲 Dames" },
     { id: "morpion", label: "❌ Morpion" },
+    { id: "bataille navale", label: "⚓ Bataille Navale" },
   ];
 
   return (
