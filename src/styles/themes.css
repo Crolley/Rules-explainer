@@ -1,0 +1,164 @@
+/* Thème par défaut (dark purple) */
+:root[data-theme="dark"] {
+  --bg-gradient-start: #0f0c29;
+  --bg-gradient-mid: #302b63;
+  --bg-gradient-end: #24243e;
+
+  --primary-color: #667eea;
+  --primary-color-dark: #764ba2;
+  --accent-color: #f093fb;
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-placeholder: rgba(255, 255, 255, 0.5);
+}
+
+/* Thème clair (light blue) */
+:root[data-theme="light"] {
+  --bg-gradient-start: #e0f7fa;
+  --bg-gradient-mid: #b2ebf2;
+  --bg-gradient-end: #80deea;
+
+  --primary-color: #0288d1;
+  --primary-color-dark: #0277bd;
+  --accent-color: #4fc3f7;
+
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-shadow: rgba(0, 0, 0, 0.1);
+
+  --text-primary: #1a1a1a;
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-placeholder: rgba(0, 0, 0, 0.4);
+}
+
+/* Thème sunset (orange/pink) */
+:root[data-theme="sunset"] {
+  --bg-gradient-start: #1a0a2e;
+  --bg-gradient-mid: #6a1b4d;
+  --bg-gradient-end: #ff6b6b;
+
+  --primary-color: #ff6b6b;
+  --primary-color-dark: #ee5a6f;
+  --accent-color: #ffd93d;
+
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: rgba(0, 0, 0, 0.3);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.8);
+  --text-placeholder: rgba(255, 255, 255, 0.5);
+}
+
+/* Thème ocean (blue/green) */
+:root[data-theme="ocean"] {
+  --bg-gradient-start: #0a2342;
+  --bg-gradient-mid: #2ca58d;
+  --bg-gradient-end: #84bc9c;
+
+  --primary-color: #2ca58d;
+  --primary-color-dark: #1b7a6b;
+  --accent-color: #84bc9c;
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-placeholder: rgba(255, 255, 255, 0.5);
+}
+
+/* Thème forest (green nature) */
+:root[data-theme="forest"] {
+  --bg-gradient-start: #0f2027;
+  --bg-gradient-mid: #203a43;
+  --bg-gradient-end: #2c5364;
+
+  --primary-color: #4caf50;
+  --primary-color-dark: #2e7d32;
+  --accent-color: #a5d6a7;
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-shadow: rgba(0, 0, 0, 0.4);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-placeholder: rgba(255, 255, 255, 0.5);
+}
+
+/* Thème cyber (neon / futuristic) */
+:root[data-theme="cyber"] {
+  --bg-gradient-start: #050014;
+  --bg-gradient-mid: #120458;
+  --bg-gradient-end: #1f1b3a;
+
+  --primary-color: #00e5ff;
+  --primary-color-dark: #00bcd4;
+  --accent-color: #ff00ff;
+
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(0, 229, 255, 0.25);
+  --glass-shadow: rgba(0, 0, 0, 0.6);
+
+  --text-primary: #e0f7fa;
+  --text-secondary: rgba(224, 247, 250, 0.7);
+  --text-placeholder: rgba(224, 247, 250, 0.45);
+}
+
+/* Thème rose (soft pink) */
+:root[data-theme="rose"] {
+  --bg-gradient-start: #fff1f2;
+  --bg-gradient-mid: #ffe4e6;
+  --bg-gradient-end: #fecdd3;
+
+  --primary-color: #ec4899;
+  --primary-color-dark: #db2777;
+  --accent-color: #f472b6;
+
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-shadow: rgba(0, 0, 0, 0.12);
+
+  --text-primary: #1f2937;
+  --text-secondary: rgba(31, 41, 55, 0.7);
+  --text-placeholder: rgba(31, 41, 55, 0.45);
+}
+
+/* Thème midnight (dark minimal) */
+:root[data-theme="midnight"] {
+  --bg-gradient-start: #020617;
+  --bg-gradient-mid: #020617;
+  --bg-gradient-end: #020617;
+
+  --primary-color: #6366f1;
+  --primary-color-dark: #4f46e5;
+  --accent-color: #22d3ee;
+
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: rgba(0, 0, 0, 0.7);
+
+  --text-primary: #f8fafc;
+  --text-secondary: rgba(248, 250, 252, 0.7);
+  --text-placeholder: rgba(248, 250, 252, 0.45);
+}
+
+/* Application du dégradé de fond */
+body {
+  background: linear-gradient(
+    135deg,
+    var(--bg-gradient-start) 0%,
+    var(--bg-gradient-mid) 50%,
+    var(--bg-gradient-end) 100%
+  );
+  background-attachment: fixed;
+  color: var(--text-primary);
+  transition: background 0.5s ease, color 0.3s ease;
+}
