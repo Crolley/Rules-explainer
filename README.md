@@ -1,19 +1,10 @@
 # Buddy - Assistant pour le jeu de dames 🎲
 
-Un petit chat pour apprendre les règles du jeu de dames, fait avec React et une IA locale.
+Un petit chat pour apprendre les règles du jeu de dames,morpion et la bataille navale fait avec React et une IA locale.
 
 ## C'est quoi ce projet ?
 
 J'ai créé un chatbot qui explique les règles du jeu de dames. Il tourne en local avec Ollama et répond aux questions de manière simple et claire.
-
-## Ce qu'il fait
-
-- Interface de chat stylée
-- Répond aux questions sur les dames
-- Refuse gentiment les sujets hors-sujet
-- Animation de chargement quand l'IA réfléchit
-- Scroll automatique des messages
-- Envoi avec Entrée
 
 ## Comment l'installer
 
@@ -48,11 +39,31 @@ Ouvre http://localhost:5173 et c'est parti !
 
 ```
 src/
-├── Utils/
-│   └── systemPrompt.txt    # Les règles du jeu
-├── App.jsx                 # Le code principal
-├── App.css                 # Le style du chat
-└── index.css               # Style global
+├── components/
+│   ├── ChatContainer.jsx       # Zone de chat principale avec titre
+│   ├── MessageList.jsx         # Affichage des messages avec animations
+│   ├── MessageInput.jsx        # Champ de saisie et bouton envoyer
+│   ├── Sidebar.jsx             # Sélection de jeu et thème
+│   └── ThemeSelector.jsx       # Menu déroulant des 8 thèmes
+├── hooks/
+│   ├── useChat.js              # Gestion du chat et appels API Ollama
+│   └── useTheme.js             # Gestion des thèmes avec localStorage
+├── utils/
+│   ├── gamePrompts.js          # Import des prompts et messages initiaux
+│   ├── dames.txt               # Prompt système pour le jeu de Dames
+│   ├── batailleNavale.txt      # Prompt système pour la Bataille Navale
+│   └── morpion.txt             # Prompt système pour le Morpion
+├── styles/
+│   ├── themes.css              # Définition des 8 thèmes
+│   ├── ChatContainer.css       # Styles de la zone de chat
+│   ├── MessageList.css         # Styles des messages avec animations
+│   ├── MessageInput.css        # Styles du champ de saisie
+│   ├── Sidebar.css             # Styles de la barre latérale
+│   └── ThemeSelector.css       # Styles du sélecteur de thème
+├── App.jsx                     # Composant racine
+├── App.css                     # Layout grid de l'application
+├── index.css                   # Styles globaux et scrollbar
+└── main.jsx                    # Point d'entrée React DOM
 ```
 
 ## Technologies
@@ -65,15 +76,10 @@ src/
 ## Personnaliser
 
 **Changer le modèle d'IA :**  
-Dans `App.jsx`, change `model: "mistral"` par un autre modèle (llama3.2, phi, etc.)
+Dans `useChat.js`, change `model: "mistral"` par un autre modèle (llama3.2, phi, etc.)
 
 **Modifier les règles :**  
-Édite `src/Utils/systemPrompt.txt`
-
-## Problèmes courants
-
-**L'IA ne répond pas :**  
-**C'est lent :**
+Édite `src/utils/systemPrompt.txt`
 
 ## Idées pour plus tard
 
